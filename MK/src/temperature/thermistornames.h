@@ -58,6 +58,8 @@
 #elif THERMISTOR_ID == 12
   #define THERMISTOR_NAME "E3104FXT (alt)"
 #elif THERMISTOR_ID == 13
+  #define THERMISTOR_NAME "JGAurora A5"
+#elif THERMISTOR_ID == 15
   #define THERMISTOR_NAME "Hisens 3950"
 #elif THERMISTOR_ID == 20
   #define THERMISTOR_NAME "PT100 UltiMB"
