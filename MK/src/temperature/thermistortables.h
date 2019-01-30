@@ -669,6 +669,51 @@
   };
 #endif
 
+#if ANY_THERMISTOR_IS(15) // JGAurora A5 thermistor calibration
+  const short temptable_15[][2] PROGMEM = {
+    { 31 * OVERSAMPLENR, 275 },
+    { 33 * OVERSAMPLENR, 270 },
+    { 35 * OVERSAMPLENR, 260 },
+    { 38 * OVERSAMPLENR, 253 },
+    { 41 * OVERSAMPLENR, 248 },
+    { 48 * OVERSAMPLENR, 239 },
+    { 56 * OVERSAMPLENR, 232 },
+    { 66 * OVERSAMPLENR, 222 },
+    { 78 * OVERSAMPLENR, 212 },
+    { 93 * OVERSAMPLENR, 206 },
+    { 106 * OVERSAMPLENR, 199 },
+    { 118 * OVERSAMPLENR, 191 },
+    { 130 * OVERSAMPLENR, 186 },
+    { 158 * OVERSAMPLENR, 176 },
+    { 187 * OVERSAMPLENR, 167 },
+    { 224 * OVERSAMPLENR, 158 },
+    { 270 * OVERSAMPLENR, 148 },
+    { 321 * OVERSAMPLENR, 137 },
+    { 379 * OVERSAMPLENR, 127 },
+    { 446 * OVERSAMPLENR, 117 },
+    { 518 * OVERSAMPLENR, 106 },
+    { 593 * OVERSAMPLENR, 96 },
+    { 668 * OVERSAMPLENR, 86 },
+    { 739 * OVERSAMPLENR, 76 },
+    { 767 * OVERSAMPLENR, 72 },
+    { 830 * OVERSAMPLENR, 62 },
+    { 902 * OVERSAMPLENR, 48 },
+    { 926 * OVERSAMPLENR, 45 },
+    { 955 * OVERSAMPLENR, 35 },
+    { 966 * OVERSAMPLENR, 30 },
+    { 977 * OVERSAMPLENR, 25 },
+    { 985 * OVERSAMPLENR, 20 },
+    { 993 * OVERSAMPLENR, 15 },
+    { 999 * OVERSAMPLENR, 10 },
+    { 1004 * OVERSAMPLENR, 5},
+    { 1008 * OVERSAMPLENR, 0 },
+    { 1012 * OVERSAMPLENR, -5 },
+    { 1016 * OVERSAMPLENR, -10 },
+    { 1020 * OVERSAMPLENR, -15}
+
+  };
+#endif
+
 #if ANY_THERMISTOR_IS(20) // PT100 with INA826 amp on Ultimaker v2.0 electronics
   /* The PT100 in the Ultimaker v2.0 electronics has a high sample value for a high temperature.
   This does not match the normal thermistor behaviour so we need to set the following defines */
